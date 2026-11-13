@@ -44,7 +44,8 @@ const hasEducation = siteConfig.education && siteConfig.education.length > 0;
               <path d="M3 7l9 6l9 -6"></path>
             </svg>
           </a>
-          <a
+          {siteConfig.social.linkedin && (
+<a
             href={siteConfig.social.linkedin}
             target="_blank"
             rel="noopener noreferrer"
@@ -70,7 +71,9 @@ const hasEducation = siteConfig.education && siteConfig.education.length > 0;
               ></path></svg
             >
           </a>
-          <a
+)}
+          {siteConfig.social.twitter && (
+<a
             href={siteConfig.social.twitter}
             target="_blank"
             rel="noopener noreferrer"
@@ -94,6 +97,7 @@ const hasEducation = siteConfig.education && siteConfig.education.length > 0;
                 d="M4 20l6.768 -6.768m2.46 -2.46l6.772 -6.772"></path></svg
             >
           </a>
+)}
           <a
             href={siteConfig.social.github}
             target="_blank"
@@ -126,7 +130,7 @@ const hasEducation = siteConfig.education && siteConfig.education.length > 0;
           <a
             href="#about"
             class="text-sm text-gray-600 hover:text-gray-800 transition-colors"
-            >About</a
+            >个人简介</a
           >
           {
             hasProjects && (
@@ -134,7 +138,7 @@ const hasEducation = siteConfig.education && siteConfig.education.length > 0;
                 href="#projects"
                 class="text-sm text-gray-600 hover:text-gray-800 transition-colors"
               >
-                Projects
+                项目经历
               </a>
             )
           }
@@ -144,7 +148,7 @@ const hasEducation = siteConfig.education && siteConfig.education.length > 0;
                 href="#experience"
                 class="text-sm text-gray-600 hover:text-gray-800 transition-colors"
               >
-                Experience
+                工作经历
               </a>
             )
           }
@@ -154,14 +158,14 @@ const hasEducation = siteConfig.education && siteConfig.education.length > 0;
                 href="#education"
                 class="text-sm text-gray-600 hover:text-gray-800 transition-colors"
               >
-                Education
+                教育背景
               </a>
             )
           }
         </nav>
         <p class="text-sm text-gray-500">
           © {new Date().getFullYear()}
-          {siteConfig.name}. All rights reserved.
+          {siteConfig.name}. 保留所有权利。
         </p>
       </div>
     </div>
