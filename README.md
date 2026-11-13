@@ -1,187 +1,47 @@
-<img width="1943" height="1093" alt="image" src="https://github.com/user-attachments/assets/cc2ff955-17c2-48c7-81c8-479a0f061850" />
+# 何京
 
-# DevPortfolio Template
+求职意向：嵌入式测试／物联网测试／软件测试工程师  
+邮箱：19876431814@163.com  
+GitHub：https://github.com/lakam4150-commits
 
-A modern, minimalist portfolio template built with Astro and Tailwind CSS. Perfect for developers looking to showcase their skills, experience, and projects in a clean, professional way.
+## 个人简介
 
-This was completely rebuilt from the ground up from V1. This template was built to be entirely ready to go with a quick config edit (see below) but also provides the ability to easily extend in whatever way you want.
+软件测试工程师，物联网工程本科，2026年3月起就职于深圳松诺技术有限公司。具有智能家居传感器固件测试经验，负责 SNZT-04P 项目的用例设计、功能与专项测试、缺陷跟进及测试报告输出。测试范围覆盖 Zigbee、Thread 双模式，以及 Apple Home、Google Home、Amazon Alexa、SmartThings 和 Home Assistant 等生态，能够围绕固件改动开展针对性回归，并结合专项测试结果记录版本质量与遗留风险。
 
-This template also comes with `CLAUDE.md` and `.cursor/rules` files for easy integration with your existing AI workflows.
+## 专业技能
 
-> **📬 Connect & Share!**  
-> For questions and updates, feel free to reach out on [**X (Twitter)**](https://x.com/rfitzio).  
-> If you've built and published your personal site with this template, I'd love to see it! Send me a DM 🚀
+- **测试设计与执行**：依据产品需求、协议及固件规格设计用例，覆盖功能、边界、异常及兼容性场景；按 P0／P1 等优先级组织执行与版本回归。
+- **物联网固件测试**：具备 Zigbee／Thread 模式切换、Matter 生态接入、配网、断电重连、状态上报及多生态兼容测试经验。
+- **OTA 与可靠性验证**：覆盖蓝牙、Zigbee 网关、ZHA、Home Assistant、Apple Home 等升级链路，记录升级成功情况与耗时；开展长时间挂测、功耗及电量检测。
+- **问题分析与质量记录**：结合协议抓包、串口日志及测试现象复现问题、协助定位，跟进缺陷回归；汇总测试数据、未执行项和遗留风险，输出版本测试报告。
 
-## Preview
+## 工作经历
 
-To view a live preview of the site, [click here](https://ryanfitzgerald.github.io/devportfolio/).
+### 深圳松诺技术有限公司 · 软件测试工程师
 
-## Built With
+2026.03—至今
 
-- **[Astro](https://astro.build/)** - Static site generator for modern web apps
-- **[Tailwind CSS v4](https://tailwindcss.com/)** - Utility-first CSS framework
-- **[Tabler Icons](https://tabler.io/icons)** - Free and open source icons
-- **TypeScript** - For type-safe configuration
+- 负责智能家居传感器项目的测试用例设计与执行，覆盖固件功能、网关兼容及跨生态使用场景。
+- 负责 OTA、配网、重连、状态上报、功耗与稳定性等专项验证，记录测试环境、操作步骤、预期结果及实际表现。
+- 跟进缺陷复现与回归，整理版本测试报告和遗留风险，为研发、产品及项目团队的发布评审提供测试依据。
 
-## Updating the Template
+## 项目经历
 
-### Configuration
+### SNZT-04P 智能门窗传感器固件测试
 
-The template is designed to be easily customizable through the `src/config.ts` file. This single file controls:
+2026.07—2026.11（所提供测试记录覆盖期间）
 
-- **Personal Information**: Name, title, description
-- **Accent Color**: Primary color theme (changing this will change the accent color site wide)
-- **Social Links**: Email, LinkedIn, Twitter, GitHub (all optional)
-- **About Section**: Personal bio/description
-- **Skills**: List of technical skills
-- **Projects**: Project showcase with descriptions and links
-- **Experience**: Work history with bullet points
-- **Education**: Educational background and achievements
+**项目概述**：支持 Zigbee、Thread 双模式的智能门窗传感器，涉及门窗开合、防拆、电量等功能，以及多平台接入和固件升级。
 
-If skills, projects, experience, or education are removed from the config, those sections will be hidden entirely.
+- **用例设计与版本验证**：负责 V1.0.6、V1.0.7 的用例设计、执行与报告输出，覆盖产测、模式切换、蓝牙配对、网关兼容及单／多生态场景。V1.0.7 首轮基于 354 条用例开展验证，针对 Zigbee OTA 新增功能及功耗优化进行重点检查。
+- **跨生态兼容验证**：在 Apple Home、Google Home、Amazon Alexa、SmartThings、Home Assistant 等生态开展配网、重连及状态同步测试，记录各平台接入表现、响应耗时与差异，识别设备、网关和生态之间的兼容性问题。
+- **升级链路验证**：覆盖蓝牙、Zigbee 网关、ZHA、Home Assistant、Apple Home 等 OTA 链路，核对升级成功情况和耗时，对失败样本保留异常记录并跟进分析。
+- **网络恢复与事件可靠性**：V1.0.7 专项完成 Zigbee 断电重连 40 次、Thread 边界路由断电重连 25 次、Thread 设备断电重连 50 次，记录均成功；完成 Zigbee 状态上报 280 次、Thread 状态上报 1000 次，测试样本内上报成功率为 100%。
+- **低功耗与稳定性验证**：开展功耗、电量检测及长时间挂测，结合平均电流、状态上报频次和运行记录评估设备表现，为续航评估及版本质量分析提供数据依据。
+- **变更回归与风险记录**：针对 V1.0.7 改动涉及的 P0 用例、专项及历史缺陷开展第二轮回归，记录 100 条用例通过；在报告中区分通过、失败、未执行及遗留问题，支撑版本发布评审。
 
-### Example structures
+## 教育经历
 
-Here's what the config data structure looks like for each section:
+### 肇庆学院 · 物联网工程 · 本科
 
-#### Basic Information
-```typescript
-name: "Your Name",
-title: "Your Job Title",
-description: "Brief site description",
-accentColor: "#1d4ed8", // Hex color for theme
-```
-
-#### Social Links (all optional)
-```typescript
-social: {
-  email: "your-email@example.com",
-  linkedin: "https://linkedin.com/in/yourprofile",
-  twitter: "https://twitter.com/yourprofile", 
-  github: "https://github.com/yourusername",
-}
-```
-
-#### About Section
-```typescript
-aboutMe: "A paragraph describing yourself, your background, interests, and what you're passionate about. This appears in the About section of your portfolio."
-```
-
-#### Skills
-```typescript
-skills: ["JavaScript", "React", "Node.js", "Python", "AWS", "Docker"]
-```
-
-#### Projects
-```typescript
-projects: [
-  {
-    name: "Project Name",
-    description: "Brief description of what the project does and its impact",
-    link: "https://github.com/yourusername/project",
-    skills: ["React", "Node.js", "AWS"], // Technologies used
-  }
-]
-```
-
-#### Experience
-```typescript
-experience: [
-  {
-    company: "Company Name",
-    title: "Your Job Title",
-    dateRange: "Jan 2022 - Present",
-    bullets: [
-      "Led development of microservices architecture serving 1M+ users",
-      "Reduced API response times by 40% through optimization",
-      "Mentored team of 5 junior developers",
-    ],
-  }
-]
-```
-
-#### Education
-```typescript
-education: [
-  {
-    school: "University Name",
-    degree: "Bachelor of Science in Computer Science",
-    dateRange: "2014 - 2018",
-    achievements: [
-      "Graduated Magna Cum Laude with 3.8 GPA",
-      "Dean's List all semesters",
-      "President of Computer Science Club"
-    ]
-  }
-]
-```
-
-### Icons
-
-The template uses [Tabler Icons](https://tabler.io/icons) for all icons. If you wish to add more icons and have it look consistent with what's already there, you can browse through their extensive icon library.
-
-## Project Structure
-
-```
-devportfolio/
-├── public/
-│   └── favicon.svg          # Site favicon
-├── src/
-│   ├── components/          # Astro components
-│   │   ├── About.astro      # About section
-│   │   ├── Education.astro  # Education section
-│   │   ├── Experience.astro # Work experience section
-│   │   ├── Footer.astro     # Site footer
-│   │   ├── Header.astro     # Navigation header
-│   │   ├── Hero.astro       # Hero/intro section
-│   │   └── Projects.astro   # Projects showcase
-│   ├── pages/
-│   │   └── index.astro      # Main page layout
-│   ├── styles/
-│   │   └── global.css       # Global styles
-│   └── config.ts            # Site configuration
-├── astro.config.mjs         # Astro configuration
-├── package.json             # Project dependencies
-├── tailwind.config.js       # Tailwind configuration
-└── tsconfig.json            # TypeScript configuration
-```
-
-## Local Development
-
-If you'd like to run it locally:
-
-```
-git clone https://github.com/RyanFitzgerald/devportfolio.git
-cd devportfolio
-npm install
-```
-
-After that, start up the Astro dev server with:
-
-```
-npm run dev
-```
-
-## Deployment
-
-The template can be deployed to any static hosting service easily (and in most cases, completely free). Here are some options:
-
-- To deploy with Netlify, [click here](https://docs.astro.build/en/guides/deploy/netlify/).
-- To deploy with Vercel, [click here](https://docs.astro.build/en/guides/deploy/vercel/).
-- To deploy with GitHub Pages, [click here](https://docs.astro.build/en/guides/deploy/github/).
-- To deploy with Cloudflare Pages, [click here](https://docs.astro.build/en/guides/deploy/cloudflare/).
-- To deploy with Render, [click here](https://docs.astro.build/en/guides/deploy/render/).
-
-Want to deploy somewhere else? Find more guides [here](https://docs.astro.build/en/guides/deploy/).
-
-## Changelog
-
-To view the changelog, see CHANGELOG.md.
-
-## License
-
-This project is fully and completely MIT. See LICENSE.md.
-
-## Questions?
-
-Feel free to reach out on [X (Twitter)](https://x.com/rfitzio) if you have any questions or need help.
+2021—2025
